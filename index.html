@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ананасовый улун — Teaboom.ru</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <article class="product-card" aria-labelledby="product-title">
+      <!-- Галерея -->
+      <div class="product-card__media">
+        <img
+          class="product-card__image"
+          src="./img/e4bb1618-fb80-41e2-8758-86f884ce095d.jpg" alt="Ананасовый улун — рассыпной чай"
+          loading="lazy"
+          width="600" height="600"
+        />
+      </div>
+
+      <!-- Информация -->
+      <div class="product-card__info">
+        <a class="product-card__category" href="#">Улун</a>
+        <h1 class="product-card__title" id="product-title">Ананасовый улун</h1>
+
+        <!-- Фасовки -->
+        <fieldset class="packages" aria-label="Выбор фасовки">
+          <legend class="visually-hidden">Выберите фасовку</legend>
+          <button type="button" class="packages__item is-active" data-package="100">
+            <span class="packages__weight">100 г</span>
+          </button>
+          <button type="button" class="packages__item" data-package="500">
+            <span class="packages__weight">500 г</span>
+          </button>
+          <button type="button" class="packages__item" data-package="1000">
+            <span class="packages__weight">1000 г</span>
+          </button>
+          <button type="button" class="packages__item" data-package="5000">
+            <span class="packages__weight">5000 г</span>
+          </button>
+        </fieldset>
+
+        <p class="product-card__sku">
+          Артикул: <span data-sku>01306</span>
+        </p>
+
+        <!-- Цена -->
+        <div class="product-card__price">
+          <span class="price price--current" data-price>326,40 ₽</span>
+          <s class="price price--old" data-old-price>349,20 ₽</s>
+        </div>
+
+        <!-- Кнопка -->
+        <button type="button" class="btn btn--cart" data-add-to-cart>
+          В корзину
+        </button>
+
+        <!-- Описание -->
+        <div class="product-card__description">
+          <h2 class="product-card__description-title">Коротко о чае</h2>
+          <p>
+            Ананасовый улун — это сочетание классического улуна и спелого
+            тропического ананаса. Мягкий, сладковатый вкус с фруктовым
+            послевкусием. Подходит для утреннего чаепития и как десертный напиток.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
